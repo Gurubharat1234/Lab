@@ -1,0 +1,73 @@
+<!-- <div class="image"> -->
+  <div class="col-md-4 offset-md-4 mt-5">
+    <!-- <div class="alert alert-success" *ngIf="message">
+      {{ message }}
+  </div> -->
+  
+      <div class="shadow p-3 mb-5  bg-white rounded">
+        <h1>Please Login</h1>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+          <div class="formGroup mt-2 mb-3">
+            <input type="email" class="form-control" placeholder="Enter your Email" name="Email" required ngModel #name="ngModel">
+          </div>
+          <div class="formGroup mt-3 mb-3">
+            <input type="password" class="form-control" placeholder="Enter your Password" name="pwd" required ngModel #pwd="ngModel">
+          </div>
+          <div class="float-end">
+          <button class="btn btn-secondary mt-2" type="submit" [disabled]="loginForm.invalid">Login</button>
+          </div>
+      </form>
+      <div class="mb-3">
+        <a routerLink="Register">Not Registered Yet ?? Click here to Register</a>
+
+      </div>
+      
+  </div>
+  </div>
+  <router-outlet></router-outlet>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="col-md-6 offset-md-4 mt-5">
+  <div class="shadow p-3 mb-5 bg-body rounded">
+  
+        <div class="card-header text-center">
+         <b> Please Login </b> 
+        </div>
+        <div class="card-body">
+          <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+              <div class="formGroup mt-2">
+                <input type="email" class="form-control" placeholder="Enter your Email" name="Email" required ngModel #name="ngModel">
+              </div>
+              <div class="formGroup mt-3">
+                <input type="password" class="form-control" placeholder="Enter your Password" name="pwd" required ngModel #pwd="ngModel">
+              </div>
+              <div class="float-end">
+              <button class="btn btn-secondary mt-2" type="submit" [disabled]="loginForm.invalid">Login</button>
+              </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <a routerLink="Register">Not Registered Yet ?? Click here to Register</a>
+        </div>
+      
+</div> </div> -->
+<!-- </div>
+<router-outlet></router-outlet> -->
